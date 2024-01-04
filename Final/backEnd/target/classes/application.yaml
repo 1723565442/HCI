@@ -1,0 +1,41 @@
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+
+  # 数据库配置
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/hotel
+    username: postgres
+    password: 12345678
+    #907600
+
+  jpa:
+    show-sql: true
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  web:
+    resources:
+      static-locations: file:D://images
+  servlet:
+    multipart:
+      max-file-size: 10MB #设置单个文件最大请求100MB
+      max-request-size: 10MB #最多一次请求一个文件
+      resolve-lazily: true #设置为懒加载，不然依然会捕获不到异常
+server:
+  port: 8080
+  tomcat.max-swallow-size: 20MB # tomcat 的最大吞吐量,可设置为 -1 不作限制
+
+sa-token:
+  #   token-name: token
+  #   # 30 days
+  #   timeout: 2592000
+  #   # no expiration
+  #   activity-timeout: -1
+  #   # multi login
+  #   is-concurrent: true
+  #   is-share: true
+  token-style: uuid
+  is-log: true
