@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Challenges in Pathology}{3}{0}{2}
+\beamer@sectionintoc {3}{Research and Development}{4}{0}{3}
+\beamer@sectionintoc {4}{NaviPath Design Components}{6}{0}{4}
+\beamer@sectionintoc {5}{Validation and Results}{7}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{8}{0}{6}
